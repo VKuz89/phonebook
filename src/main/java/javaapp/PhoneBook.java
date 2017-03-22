@@ -45,4 +45,19 @@ public class PhoneBook {
         }
     }
 
+    @Command
+    public List<Record> find(String str) {
+        str = str.toLowerCase();
+        List<Record> result = new ArrayList<>();
+        for (Record r : recordList) {
+            String name = r.getName().toLowerCase();
+            if (name.contains(str)) {
+                result.add(r);
+            }
+        }
+        return result;
+    }
+
+
 }
+

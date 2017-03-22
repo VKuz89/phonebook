@@ -1,5 +1,7 @@
 package javaapp;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -12,7 +14,7 @@ public class Record {
     private String phone; //для созданных строк нужно добавить getter and setter (правая кнопка Generate)
     private String adress;
     private String number;
-    private final List<String> phones = new Arraylist<>();
+    private final List<String> phones = new ArrayList<>();
 
     public Record() { //событие, при котором создается new record
         count++;
